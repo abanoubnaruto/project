@@ -1,0 +1,182 @@
+:root {
+    --main-color: #2196f3;
+    --main-color-alt:#011f36;
+    --main-transition: 0.3s;
+    --main-padding-top:100px;
+    --main-padding-bottom:100px;
+    --section-background: #ececec;
+}
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* global roles */
+header{
+    padding: 10px 30px;
+    direction: ltr;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+header .logo{ caret-color: transparent ; color: white;
+    font-size: 60px; width: 70px; transition: 0.7s;
+    -webkit-transition: 0.7s; -moz-transition: 0.7s;
+    -ms-transition: 0.7s; -o-transition: 0.7s;
+    width: 150px;
+}
+header .logo img {
+    max-width: 100%;
+}
+header .logo:hover{
+    padding-left: 10px;
+    padding-top: 15px;
+    width: 130px;
+    color: blue;
+    transform: scale(1);
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+header .container .title {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 24px;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    background-image: url(./industrial-furnace-cracked-hydrocarbon-petrochemical-business-sunset-sky-background-manufacturing-petroleum-industrial-plant_168569-23.avif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    box-shadow: none;
+    transition: background 0.4s ease;
+}
+body .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.395);
+    z-index: -1;
+}
+.questionnaire{
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: var(--main-padding-bottom);
+    background-color: #ecececa1;
+    margin: 0px 100px;
+}
+.questionnaire .questions{
+    margin: 80px 65px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.questionnaire .questions li {
+    margin: 30px 0 30px
+}
+.questionnaire .container {
+    position: absolute;
+    background-color: white;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+}
+.questionnaire textarea {
+    margin-left: auto;
+}
+.question-one{
+    margin-bottom: 10px;
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    position: relative;
+    flex-direction: column;
+}
+button {
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+button:hover {
+    background-color: #1c45ff;
+    color: black;
+}
+/* wrap */
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.7);
+    transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+    -webkit-transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+    -moz-transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+    -ms-transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+    -o-transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+}
+
+input:focus {
+    box-shadow: 0px 30px 1em -25px rgba(0, 0, 0, 0.4);
+    transform: scale(1.2, 1.2);
+}
+
+input::-webkit-input-placeholder {
+    transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+color: transparent;
+}
+  /* end wrap */
